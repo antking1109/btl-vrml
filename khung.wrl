@@ -269,78 +269,100 @@ DEF	khung Transform	{
 			]
 		}
 		
-		DEF cuakinhT Transform {
-			translation	0 0 0
+		DEF	cuaMoT Transform {
 			children [
-				DEF	cyl CylinderSensor {
-					maxAngle 0
-					minAngle 1.57
-					enabled	TRUE
-					offset 0
-				}
-				DEF obCua Transform	{
-					translation	0.65 0.7 1
+				DEF	cuaTrai Transform {
+					translation	0.30 0.7 1
 					children [
-						DEF	vecua Shape	{
-							appearance Appearance {
-            					material Material {
-            					  diffuseColor 0.6 0.5882 0.6353
-            					  ambientIntensity 1.0
-            					  specularColor 0 0 0
-            					  shininess 0.145
-            					  transparency 0.5
-            					}
-        					}
-							geometry Box {
-								size 0.7 1.4 0.01
-							}
-						}
-						DEF	taycamT Transform {
-							translation	0.2 0 0
-							scale .2 .2 .2
+						DEF	obcua1 Transform {
+							translation	0.35 0 0
 							children [
-								DEF veTayCam Shape {
-									geometry Extrusion {
-										creaseAngle	1
-										solid FALSE
-										crossSection [1 1, 1 -1, -1 -1, -1 1, 1 1]
-										spine [-0.5 0 -0.5, 0.5 0 -0.5,0.5 0 0.5,-0.5 0 0.5]
-										scale [.1 .1, .1 .1, .1 .1,.1 .1]
-									}
-									appearance Appearance {
-										material Material {
-											diffuseColor .09 .03 0
-											specularColor .22 .1 .1
-											ambientIntensity .01
-											shininess .05
+								DEF obCua Transform	{	   
+									children [
+										DEF	vecua Shape	{
+											appearance Appearance {
+            									material Material {
+            									  diffuseColor 0.6 0.5882 0.6353
+            									  ambientIntensity 1.0
+            									  specularColor 0 0 0
+            									  shininess 0.145
+            									  transparency 0.5
+            									}
+        									}
+											geometry Box {
+												size 0.7 1.4 0.01
+											}
 										}
-									}
+										DEF	taycamT Transform {
+											translation	0.2 0 0
+											scale .2 .2 .2
+											children [
+												DEF veTayCam Shape {
+													geometry Extrusion {
+														creaseAngle	1
+														solid FALSE
+														crossSection [1 1, 1 -1, -1 -1, -1 1, 1 1]
+														spine [-0.5 0 -0.5, 0.5 0 -0.5,0.5 0 0.5,-0.5 0 0.5]
+														scale [.1 .1, .1 .1, .1 .1,.1 .1]
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor .09 .03 0
+															specularColor .22 .1 .1
+															ambientIntensity .01
+															shininess .05
+														}
+													}
+												}
+											]
+										}
+									]
+	
 								}
 							]
 						}
 					]
-					
 				}
-				
+				DEF	cylin1 CylinderSensor {
+									minAngle 0
+									maxAngle 1.57
+									enabled	TRUE
+								}
 			]
-			ROUTE cyl.rotation_changed TO obCua.rotation													   
+			ROUTE cylin1.rotation_changed TO cuaTrai.rotation
 		}
-		DEF	cuakinhP Transform {
+		
+		DEF	cuaMoP Transform {
 			children [
-				Transform {
+				DEF	cuaPhai Transform {
 					translation	1.35 0.7 1
 					children [
-						USE vecua 
-						Transform {
-							translation	-0.2 0 0
-							scale .2 .2 .2
-							rotation 0 1 0 3.14
-							children [USE veTayCam ]
+						DEF	obcua2 Transform {
+							translation	-0.35 0 0
+							children [
+								DEF obCuaP Transform {	 
+									children [
+										USE vecua 
+										Transform {
+											translation	-0.2 0 0
+											scale .2 .2 .2
+											rotation 0 1 0 3.14
+											children [USE veTayCam ]
+										}
+									]
+								}
+							]
 						}
 					]
 				}
+				DEF	cylin2 CylinderSensor {
+									minAngle 0
+									maxAngle 1.57
+									enabled	TRUE
+								}
 				
 			]
+			ROUTE cylin2.rotation_changed TO cuaPhai.rotation
 		}
 		DEF	tuongKinhT Transform {
 			translation	-2.95 0.85 1
@@ -1318,6 +1340,50 @@ DEF	khung Transform	{
 		DEF	chuIPH2 Transform {
 			translation	10 0 0
 			children USE chuIPH
+		}
+		DEF	nenNgoai Transform {
+			translation	0 0 0
+			children [
+				DEF	veNenNgoai Transform {
+					translation	0 0 2
+					children [
+						Shape {
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Images/gach4.jpeg"]
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {
+								size 12.4 0.002 2
+							}
+						}  
+					]
+				}
+			]
+		}
+		DEF	nenTrong Transform {
+			translation	0 0 0
+			children [
+				DEF	veNenTrong Transform {
+					translation	0 0 -2
+					children [
+						Shape {
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["Images/gach4.jpeg"]
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {
+								size 11.5 0.002 6
+							}
+						}  
+					]
+				}
+			]
 		}
 	]
 }
