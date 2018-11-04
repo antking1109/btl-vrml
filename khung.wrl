@@ -1,0 +1,1323 @@
+#VRML V2.0 utf8
+DEF	khung Transform	{
+	children [
+		DEF matdat Transform {
+		  children [
+    		Shape {
+    		  appearance Appearance {
+        		material Material {
+        		  diffuseColor 0.3373 0.3373 0.3373
+        		}
+		
+    		  }
+			  geometry Box {size 15 .001 12}
+		  }
+		  ]
+		}
+
+		DEF	cacTru Transform {
+			children [
+				DEF	tru1 Transform {
+					translation	-6 1.5 1
+					children [
+						DEF veTru Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Cylinder{
+								radius 0.2
+								height 3
+							}
+						}
+					]
+				}
+				DEF	tru2 Transform {
+					translation	-4 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru3 Transform {
+					translation	-2 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru4 Transform {
+					translation	0 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru5 Transform {
+					translation	2 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru6 Transform {
+					translation	4 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru7 Transform {
+					translation	6 1.5 1
+					children [USE veTru]
+				}
+				DEF	tru8 Transform {
+					translation	6 1.5 -1
+					children [USE veTru ]
+				}
+				DEF	tru9 Transform {
+					translation	6 1.5 -3
+					children [USE veTru ]
+				}
+				DEF	tru10 Transform {
+					translation	6 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru11 Transform {
+					translation	-6 1.5 -1
+					children [USE veTru ]
+				}
+				DEF	tru12 Transform {
+					translation	-6 1.5 -3
+					children [USE veTru ]
+				}
+				DEF	tru13 Transform {
+					translation	-6 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru14 Transform {
+					translation	-4 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru15 Transform {
+					translation	-2 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru16 Transform {
+					translation	4 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru17 Transform {
+					translation	2 1.5 -5
+					children [USE veTru ]
+				}
+				DEF	tru18 Transform {
+					translation	0 1.5 -5
+					children [USE veTru ]
+				}
+
+			]
+		}
+		DEF	cactuongBao Transform {
+			children [
+				DEF	tuongTrai Transform {
+					translation	-5.8 1.5 -2
+					children [
+						DEF veTuongNgoai Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 0.2 3 6
+							}
+						}
+					]
+				}
+				DEF	tuongPhai Transform	{
+					translation	5.8 1.5 -2
+					children [USE veTuongNgoai ]
+				}
+				DEF	tuongHauNgoai Transform	{
+					translation	0 1.5 -5
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 12 3 0.2
+							}
+						}	
+					]
+				}
+				DEF	tranTang2 Transform	{
+					translation	0 3 -2
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 13 0.2 7.5
+							}
+						}
+					]
+				}
+			]
+		}
+	    
+		DEF	mailan Transform {
+			translation	0 1.6 2
+			rotation 1 0 0 0.1
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .245 .255
+						}
+					}
+					geometry Box {
+						size 12 0.02 2
+					}
+				}	
+			]
+		}
+
+		DEF giado Transform	{
+			children [
+				DEF	thanhDocSau Transform {
+					translation	0 1.5 1
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 12 0.2 0.02
+							}
+						}
+					]
+				}
+				DEF	thanhNgang1 Transform {
+					translation	-5.8 1.45 2
+					children [
+						DEF	veThanhNgang Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 0.02 0.1 2
+							}
+						}
+					]
+				}
+				DEF	thanhNgang2	Transform {
+					translation	-3.8 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang7	Transform {
+					translation	-4.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang8	Transform {
+					translation	-1.8 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang3	Transform {
+					translation	-2.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang9	Transform {
+					translation	-0.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang10	Transform {
+					translation	0.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang4	Transform {
+					translation	1.8 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang11	Transform {
+					translation	2.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang5	Transform {
+					translation	3.8 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang12	Transform {
+					translation	4.2 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhNgang6	Transform {
+					translation	5.8 1.45 2
+					children [USE veThanhNgang ]
+				}
+				DEF	thanhdocTruoc Transform	{
+					translation	0 1.45 3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Box {
+								size 12 0.05 0.05
+							}
+						}
+					]
+				}
+			]
+		}
+		
+		DEF cuakinhT Transform {
+			translation	0 0 0
+			children [
+				DEF	cyl CylinderSensor {
+					maxAngle 0
+					minAngle 1.57
+					enabled	TRUE
+					offset 0
+				}
+				DEF obCua Transform	{
+					translation	0.65 0.7 1
+					children [
+						DEF	vecua Shape	{
+							appearance Appearance {
+            					material Material {
+            					  diffuseColor 0.6 0.5882 0.6353
+            					  ambientIntensity 1.0
+            					  specularColor 0 0 0
+            					  shininess 0.145
+            					  transparency 0.5
+            					}
+        					}
+							geometry Box {
+								size 0.7 1.4 0.01
+							}
+						}
+						DEF	taycamT Transform {
+							translation	0.2 0 0
+							scale .2 .2 .2
+							children [
+								DEF veTayCam Shape {
+									geometry Extrusion {
+										creaseAngle	1
+										solid FALSE
+										crossSection [1 1, 1 -1, -1 -1, -1 1, 1 1]
+										spine [-0.5 0 -0.5, 0.5 0 -0.5,0.5 0 0.5,-0.5 0 0.5]
+										scale [.1 .1, .1 .1, .1 .1,.1 .1]
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor .09 .03 0
+											specularColor .22 .1 .1
+											ambientIntensity .01
+											shininess .05
+										}
+									}
+								}
+							]
+						}
+					]
+					
+				}
+				
+			]
+			ROUTE cyl.rotation_changed TO obCua.rotation													   
+		}
+		DEF	cuakinhP Transform {
+			children [
+				Transform {
+					translation	1.35 0.7 1
+					children [
+						USE vecua 
+						Transform {
+							translation	-0.2 0 0
+							scale .2 .2 .2
+							rotation 0 1 0 3.14
+							children [USE veTayCam ]
+						}
+					]
+				}
+				
+			]
+		}
+		DEF	tuongKinhT Transform {
+			translation	-2.95 0.85 1
+			children [
+				Shape {
+					appearance Appearance {
+            			material Material {
+            			  diffuseColor 0.6 0.5882 0.6353
+            			  ambientIntensity 1.0
+            			  specularColor 0 0 0
+            			  shininess 0.145
+            			  transparency 0.5
+            			}
+        			}
+					geometry Box {
+						size 6.5 1.7 0.01
+					}
+				}
+			]
+		}
+		DEF	tuongKinhP Transform {
+			translation	3.8 0.85 1
+			children [
+				Shape {
+					appearance DEF mauKinh Appearance {
+            			material Material {
+            			  diffuseColor 0.6 0.5882 0.6353
+            			  ambientIntensity 1.0
+            			  specularColor 0 0 0
+            			  shininess 0.145
+            			  transparency 0.5
+            			}
+        			}
+					geometry Box {
+						size 4.2 1.7 0.01
+					}
+				}
+			]
+		}
+		DEF	tuongKinhTang2 Transform {
+			translation	0 2.25 1
+			children [
+				Shape {
+					 appearance	USE	mauKinh
+					 geometry Box {
+						 size 12 1.5 0.01
+					 }
+				}
+			]
+		}
+		DEF	khungQuanCafe Transform	{
+			children [
+				DEF	tuongTraiCF Transform	{
+					translation	-1.5 0.85 -1
+					children [
+						DEF veTuongTrai Shape {
+							
+							geometry Box {
+								size 0.2 1.7 4
+							}
+							appearance DEF mauTuong Appearance {
+								material Material {
+									diffuseColor .236 .171 .083
+								}
+							}
+						}
+					]
+				}
+				DEF	tuongPhaiCF Transform	{
+					translation	3.5 0.85 -1
+					children [
+						USE	veTuongTrai
+					]
+				}
+				DEF	tuongHau Transform {
+					translation	1 0.85 -2.5
+					children [
+						Shape {
+							  appearance USE mauTuong
+							  geometry Box {
+								  size 5 1.7 0.2
+							  }
+						}
+					]
+				}
+				DEF	tranQuanCafe Transform {
+					translation	0 1.7 -2
+					children [
+						Shape {
+							appearance USE mauTuong
+							geometry Box {
+								size 11.5 0.1 6
+							}
+						}
+					]
+				}
+			]
+		}
+		DEF	tang3va4 Transform {
+			translation	0 -0.2 0.2
+			scale 1.025 1 1.1
+			children [
+				DEF	mattruocTang34 Transform {
+					children [
+						DEF	tang3va41 Transform {
+							translation	4 4.6 1.4
+							children [
+								 DEF vetang3va41 Shape {
+									 geometry Box {
+										 size 5 3 0.2
+									 }
+									 appearance Appearance {
+										 material Material {
+											 diffuseColor 0.8 0.8 0.8
+										 }
+										 texture ImageTexture {
+											 url "Images/gach-trang.jpg"
+											 repeatS TRUE
+											 repeatT TRUE
+										 }
+									 }
+								 }
+							]
+						}
+						DEF	tang3va42 Transform	{
+							translation	-4 4.6 1.4
+							children [USE vetang3va41 ]
+						}
+						DEF	tang3va43 Transform	{
+							translation	0 4.6 1.4
+							children [USE vetang3va41 ]
+						}
+					]
+				}
+				DEF	matSauTang34 Transform {
+					translation	0 0 -6.8
+					children [USE mattruocTang34 ]
+				}
+				DEF	matPhaiTang34 Transform	{
+					translation	0 0 0
+					children [
+						Transform {
+							translation	6.4 4.6 -1
+							rotation 0 1 0 1.5708
+							children [
+								USE	vetang3va41
+							]
+						}
+						Transform {
+							translation	6.4 4.6 -3
+							rotation 0 1 0 1.5708
+							children [USE vetang3va41 ]
+						}
+					]
+				}
+				DEF	matTraiTang34 Transform	{
+					translation	-12.8 0 0
+					children [USE matPhaiTang34 ]
+				}
+			]
+		}
+		DEF	kinhDen Transform {
+			 children [
+				DEF	kinhDenTrai Transform {
+					translation	-6.65 6.15 -2
+					children [
+						DEF	veKinhDenTrai Shape	{
+							appearance DEF mauKinhDen Appearance {
+            					material Material {
+            					  diffuseColor 0 0 0
+#            					  ambientIntensity 1.0
+#            					  specularColor 0 0 0
+#            					  shininess 0.145
+#            					  transparency 0.5
+            					}
+        					}
+							geometry Box {
+								size 0.001 0.5 7.7
+							}
+						}
+					]
+				}
+				DEF	kinhDenPhai Transform {
+					translation	13.325 0 0
+					children [USE kinhDenTrai ]
+				}
+				DEF	kinhDenTruoc Transform {
+					translation	0 6.15 1.85
+					children [
+						Shape {
+							appearance USE mauKinhDen
+							geometry Box {
+								size 13.325 0.5 0.001
+							}
+						}
+					]
+				}
+				DEF	kinhDenSau Transform {
+					translation	0 0 -7.7
+					children [USE kinhDenTruoc ]
+				}
+			 ]
+		}
+		DEF	tuongngan1111 Transform	{
+			 translation 0 0.5 0
+			 children [
+				DEF	tuongnganTrai Transform {
+					translation	-6.65 6.15 -2
+					children [
+						DEF	vetuongnganTrai Shape	{
+							appearance DEF mautuongngan Appearance {
+            					material Material {
+            					  diffuseColor 0.8 0.8 0.8
+            					}
+        					}
+							geometry Box {
+								size 0.2 0.5 7.7
+							}
+						}
+					]
+				}
+				DEF	tuongnganPhai Transform {
+					translation	13.325 0 0
+					children [USE tuongnganTrai ]
+				}
+				DEF	tuongnganTruoc Transform {
+					translation	0 6.15 1.85
+					children [
+						Shape {
+							appearance USE mautuongngan
+							geometry Box {
+								size 13.325 0.5 0.2
+							}
+						}
+					]
+				}
+				DEF	tuongnganSau Transform {
+					translation	0 0 -7.7
+					children [USE tuongnganTruoc ]
+				}
+			 ]
+		}
+		DEF	tangcaoTruoc Transform {
+			translation	-6.5 6.8 1.5
+			scale 0.98 1 1
+			children [
+				DEF	tang1 Transform	{
+					children [
+						DEF	veTang Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Extrusion {
+								creaseAngle	1
+								solid FALSE
+								crossSection [.5 1, .5 -1, -.5 -1, -.5 1, .5 1]
+								spine [0 0 0, 0 1 0, 13.325 1 0,13.325 0 0, 0 0 0]
+								scale .1 .4
+							}
+						}
+						DEF	vachÁEOUQ1 Transform {
+							translation	0.5 0.5 0
+							children [
+								DEF veVachAEOUQ Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.1 1 0.8
+									}
+								}
+							]
+						}
+						DEF	vachÁEOUQ2 Transform {
+							translation	1 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ3 Transform {
+							translation	1.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ4 Transform {
+							translation	2 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ5 Transform {
+							translation	2.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ6 Transform {
+							translation	3 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ7 Transform {
+							translation	3.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ8 Transform {
+							translation	4 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ9 Transform {
+							translation	4.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ10 Transform {
+							translation	5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ11 Transform {
+							translation	5.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ12 Transform {
+							translation	6 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ13 Transform {
+							translation	6.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ14 Transform {
+							translation	7 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ15 Transform {
+							translation	7.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ16 Transform {
+							translation	8 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ17 Transform {
+							translation	8.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ27 Transform {
+							translation	9 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ28 Transform {
+							translation	9.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ18 Transform {
+							translation	10 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ19 Transform {
+							translation	10.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ20 Transform {
+							translation	11 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ21 Transform {
+							translation	11.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ22 Transform {
+							translation	12 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ23 Transform {
+							translation	12.5 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	vachÁEOUQ24 Transform {
+							translation	13 0.5 0
+							children [USE veVachAEOUQ ]
+						}
+						DEF	giua4589 Transform {
+							translation	0 0 0.2
+							children [
+								DEF	vachTuongTren4589 Transform	{
+									translation	6.6625 0.875 0
+									children [
+										 DEF veTuong4589 Shape {
+											appearance Appearance {
+												material Material {
+													diffuseColor 0.8 0.8 0.8
+												}
+											}
+											geometry Box {
+												size 13.325 0.25 0.01
+											}
+										}
+									]
+								}
+								DEF	vachTuongDuoi4589 Transform	{
+									translation	6.6625 0.125 0
+									children [USE veTuong4589 ]
+								}
+								DEF	kinh4589 Transform {
+									translation	6.6625 0.5 0
+									children [
+										Shape {
+											appearance Appearance {
+            									material Material {
+            									  diffuseColor 0	.178	.191
+            									  ambientIntensity 1.0
+            									  specularColor 0 0 0
+            									  shininess 0.145
+            									  transparency 0.5
+            									}
+        									}
+											geometry Box {
+												size 13.325 1 0.001
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+				DEF	tang2 Transform	{
+					translation	0 1 0
+					children [USE tang1 ]
+				}
+				DEF	tang3 Transform	{
+					translation	0 1 0
+					children [USE tang2 ]
+				}
+				DEF	tang4 Transform	{
+					translation	0 1 0
+					children [USE tang3 ]
+				}
+				DEF	tang5 Transform	{
+					translation	0 1 0
+					children [USE tang4 ]
+				}
+				DEF	tang6 Transform	{
+					translation	0 1 0
+					children [USE tang5 ]
+				}
+				DEF	tang7 Transform	{
+					translation	0 1 0
+					children [USE tang6 ]
+				}
+				DEF	tang8 Transform	{
+					translation	0 1 0
+					children [USE tang7 ]
+				}
+				DEF	tang9 Transform	{
+					translation	0 1 0
+					children [USE tang8 ]
+				} 
+			]
+		}
+		DEF	tangcaoSau Transform {
+			translation	0 0 -7
+			children [
+				USE	tangcaoTruoc
+			]
+		}
+		DEF	tangcaoTrai Transform {
+			translation	-6.4 6.8 -5.85
+			rotation 0 1 0 -1.57
+			children [
+				DEF	tang1t Transform	{
+					children [
+						DEF	veTangt Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Extrusion {
+								creaseAngle	1
+								solid FALSE
+								crossSection [.5 1, .5 -1, -.5 -1, -.5 1, .5 1]
+								spine [0 0 0, 0 1 0, 7.7 1 0,7.7 0 0, 0 0 0]
+								scale .1 .4
+							}
+						}
+						DEF	vachÁEOUQ1t Transform {
+							translation	0.5 0.5 0
+							children [
+								DEF veVachAEOUQt Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.1 1 0.8
+									}
+								}
+							]
+						}
+						DEF	vachÁEOUQ2t Transform {
+							translation	1 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ3t Transform {
+							translation	1.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ4t Transform {
+							translation	2 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ5t Transform {
+							translation	2.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ6t Transform {
+							translation	3 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ7t Transform {
+							translation	3.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ8t Transform {
+							translation	4 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ9t Transform {
+							translation	4.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ10t Transform {
+							translation	5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ11t Transform {
+							translation	5.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ12t Transform {
+							translation	6 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ13t Transform {
+							translation	6.5 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ14t Transform {
+							translation	7 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	vachÁEOUQ15t Transform {
+							translation	7.7 0.5 0
+							children [USE veVachAEOUQt ]
+						}
+						DEF	giua4589t Transform {
+							translation	0 0 0.3
+							children [
+								DEF	vachTuongTren4589t Transform	{
+									translation	3.85 0.875 0
+									children [
+										 DEF veTuong4589t Shape {
+											appearance Appearance {
+												material Material {
+													diffuseColor 0.8 0.8 0.8
+												}
+											}
+											geometry Box {
+												size 7.7 0.25 0.01
+											}
+										}
+									]
+								}
+								DEF	vachTuongDuoi4589t Transform	{
+									translation	3.85 0.125 0
+									children [USE veTuong4589t ]
+								}
+								DEF	kinh4589t Transform {
+									translation	3.85 0.5 0
+									children [
+										Shape {
+											appearance Appearance {
+            									material Material {
+            									  diffuseColor 0	.178	.191
+            									  ambientIntensity 1.0
+            									  specularColor 0 0 0
+            									  shininess 0.145
+            									  transparency 0.5
+            									}
+        									}
+											geometry Box {
+												size 7.7 1 0.001
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+				DEF	tang2t Transform	{
+					translation	0 1 0
+					children [USE tang1t ]
+				}
+				DEF	tang3t Transform	{
+					translation	0 1 0
+					children [USE tang2t ]
+				}
+				DEF	tang4t Transform	{
+					translation	0 1 0
+					children [USE tang3t ]
+				}
+				DEF	tang5t Transform	{
+					translation	0 1 0
+					children [USE tang4t ]
+				}
+				DEF	tang6t Transform	{
+					translation	0 1 0
+					children [USE tang5t ]
+				}
+				DEF	tang7t Transform	{
+					translation	0 1 0
+					children [USE tang6t ]
+				}
+				DEF	tang8t Transform	{
+					translation	0 1 0
+					children [USE tang7t ]
+				}
+				DEF	tang9t Transform	{
+					translation	0 1 0
+					children [USE tang8t ]
+				}
+			]
+		}
+		DEF	tangcaoPhai Transform {
+			translation	0 0 -3.9
+			rotation 0 1 0 3.14
+			children [
+				USE	tangcaoTrai
+			]
+		}
+		DEF maiNoc Transform {
+			translation	0 15.8 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Box {
+						size 13.325 0.2 7.7
+					}
+				}
+			]
+		}
+		DEF	lanCanTangThuong Transform {
+			children [
+				DEF	lancanThuongTrai Transform {
+					translation	-6.4125 16.95 -2
+					children [
+						DEF	KhungTrenLanCanTrai Transform {
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.5 0.1 7.7
+									}
+								}
+							]
+						}
+						DEF	KhungDuoiLanCanTrai Transform {
+							translation	0 -1 0
+							children USE KhungTrenLanCanTrai
+						}
+						DEF	VachNganLanCanTrau Transform {
+							translation	0 -0.5 0
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.5 1 0.1
+									}
+								}
+							]
+						}
+						DEF	VachNganLanCanTrau1 Transform {
+							translation	0 -0.5 3.8
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.5 1 0.1
+									}
+								}
+							]
+						}
+						DEF	VachNganLanCanTrau2	Transform {
+							translation	0 0 -7.6
+							children USE VachNganLanCanTrau1
+						}
+						DEF	VachNganLanCanTrau3	Transform {
+							translation	0 0 -1.9
+							children USE VachNganLanCanTrau1
+						}
+						DEF	VachNganLanCanTrau4	Transform {
+							translation	0 0 1.9
+							children USE VachNganLanCanTrau2
+						}
+						DEF	thanhConLanCanTrai Transform {
+							translation	0 -0.5 3.6
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.1 1 0.1
+									}
+								}
+							]
+						}
+						DEF	nhomthanhcon1 Transform	{
+							children [
+								DEF	thanhConLanCanTrai1 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai ]
+								}
+								DEF	thanhConLanCanTrai2 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai1 ]
+								}
+								DEF	thanhConLanCanTrai3 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai2 ]
+								}
+								DEF	thanhConLanCanTrai4 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai3 ]
+								}
+								DEF	thanhConLanCanTrai5 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai4 ]
+								}
+								DEF	thanhConLanCanTrai6 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai5 ]
+								}
+								DEF	thanhConLanCanTrai7 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai6 ]
+								}
+								DEF	thanhConLanCanTrai8 Transform {
+									translation	0 0 -0.2
+									children [USE thanhConLanCanTrai7 ]
+								} 
+							]
+						}
+						DEF	nhomthanhcon2 Transform	{
+							translation	0 0 -1.7
+							children USE nhomthanhcon1
+						}
+						DEF	nhomthanhcon3 Transform	{
+							translation	0 0 -1.9
+							children [USE nhomthanhcon2 ]
+						}
+						DEF	nhomthanhcon4 Transform	{
+							translation	0 0 -1.9
+							children USE nhomthanhcon3
+						}
+					]
+				}
+				DEF	lancanThuongPhai Transform {
+					translation	12.85 0 0
+					children [USE lancanThuongTrai ]
+				}
+				DEF	lancanThuongTruoc Transform {
+					translation	0 16.95 1.6
+					children [
+						DEF	veThanhTrenLanCanTruoc Transform {
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 13.325 0.1 0.5
+									}
+								}
+							]
+						}
+						DEF	veThanhDuoiLanCanTruoc Transform {
+							translation	0 -1 0
+							children [USE veThanhTrenLanCanTruoc ]
+						}
+						DEF	veVachNganLanCanTruoc Transform	{
+							translation	0 -0.5 0
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Box {
+										size 0.3 1 0.5
+									}
+								}
+							]
+						}
+						DEF	veVachNganLanCanTruoc1 Transform {
+							translation	6.5125 0 0
+							children USE veVachNganLanCanTruoc
+						}
+						DEF	veVachNganLanCanTruoc2 Transform {
+							translation	-6.5125 0 0
+							children USE veVachNganLanCanTruoc
+						}
+						DEF	veVachNganLanCanTruoc3 Transform {
+							translation	-3.10625 0 0
+							children USE veVachNganLanCanTruoc
+						}
+						DEF	veVachNganLanCanTruoc4 Transform {
+							translation	3.10625 0 0
+							children USE veVachNganLanCanTruoc
+						}
+						DEF	nhomThanhConLanCanTruoc1 Transform {	  
+							children [
+								DEF	veCacThanhConLanCanTruoc1 Transform	{
+									translation	6.2 -0.5 0
+									children [
+										Shape {
+											appearance Appearance {
+												material Material {
+													diffuseColor 0.8 0.8 0.8
+												}
+											}
+											geometry Box {
+												size 0.1 1 0.1
+											}
+										}
+									]
+								}
+								DEF	veCacThanhConLanCanTruoc2 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc1
+								}
+								DEF	veCacThanhConLanCanTruoc3 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc2
+								}
+								DEF	veCacThanhConLanCanTruoc4 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc3
+								}
+								DEF	veCacThanhConLanCanTruoc5 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc4
+								}
+								DEF	veCacThanhConLanCanTruoc6 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc5
+								}
+								DEF	veCacThanhConLanCanTruoc7 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc6
+								}
+								DEF	veCacThanhConLanCanTruoc8 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc7
+								}
+								DEF	veCacThanhConLanCanTruoc9 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc8
+								}
+								DEF	veCacThanhConLanCanTruoc10 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc9
+								}
+								DEF	veCacThanhConLanCanTruoc11 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc10
+								}
+								DEF	veCacThanhConLanCanTruoc12 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc11
+								}
+								DEF	veCacThanhConLanCanTruoc13 Transform	{
+									translation	-0.2 0 0
+									children USE veCacThanhConLanCanTruoc12
+								}
+								DEF	veCacThanhConLanCanTruoc14 Transform	{
+									translation	-0.25 0 0
+									children USE veCacThanhConLanCanTruoc13
+								}
+							]
+						}
+						DEF	nhomThanhConLanCanTruoc2 Transform {
+							translation	-3.5 0 0
+							children USE nhomThanhConLanCanTruoc1
+						}
+						DEF	nhomThanhConLanCanTruoc3 Transform {
+							translation	-3 0 0
+							children USE nhomThanhConLanCanTruoc2
+						}
+						DEF	nhomThanhConLanCanTruoc4 Transform {
+							translation	-3.2 0 0
+							children USE nhomThanhConLanCanTruoc3
+						}
+					]
+				}
+				DEF lancanThuongSau Transform {
+					translation	0 0 -7.2
+					children [USE lancanThuongTruoc ]
+				}
+			]
+		}
+		DEF chuIPH Transform {
+			translation	-5 4.2 1.9
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+
+					geometry Text{
+
+						string ["IPH"]
+
+						fontStyle FontStyle{
+
+            						size 1
+
+            						family "ARIAL"
+
+            						style "BOLD"
+
+            						spacing 1
+
+            						 justify "MIDDLE"
+
+            						 horizontal TRUE
+
+            						 leftToRight TRUE
+
+            						 topToBottom TRUE
+
+            						 }
+
+						length [1 1]
+
+						maxExtent 5.0
+
+					}
+
+				}
+			]
+		}
+		DEF	chuIPH2 Transform {
+			translation	10 0 0
+			children USE chuIPH
+		}
+	]
+}
