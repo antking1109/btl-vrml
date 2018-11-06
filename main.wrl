@@ -38,3 +38,104 @@ DEF	giaDeDo Transform {
 		url	["giado.wrl"]
 	}]
 }
+DEF	dayBongDen Transform {
+	children [
+		DEF	bongden1 Transform {
+			translation	-4 0.5 -5
+			scale 0.2 0.2 0.2
+			children [Inline {
+				url	["den.wrl"]
+			}]
+		}
+		DEF	bongden2 Transform {
+			translation	2 0 0
+			children [USE bongden1 ]
+		}
+		DEF	bongden3 Transform {
+			translation	2 0 0
+			children [USE bongden2 ]
+		}
+		DEF	bongden4 Transform {
+			translation	2 0 0
+			children USE bongden3
+		}
+		DEF	bongden5 Transform {
+			translation	2 0 0
+			children USE bongden4
+		}
+	]
+}
+DEF	dayBanNgoai Transform {
+	children [
+		DEF	dayNgoaiPhai Transform {
+			children [
+				DEF	boBanGheNgoai1 Transform {
+					translation	2.5 -2 -1
+					scale 0.15 0.15 0.15
+					children [Inline {
+					   url ["BanVuong/main1Ban2Ghe.wrl"]
+					}]
+				}
+				DEF	boBanGheNgoai2 Transform {
+					translation	5 -2 -0.6
+					scale 0.15 0.15 0.15
+					children [Inline {
+						url	["BanVuong/main2Ban4Ghe.wrl"]
+					}]
+				}
+			]
+		}
+		DEF	dayNgoaiTrai Transform {
+			translation	0 0 -2
+			rotation 0 1 0 3.14
+			children USE dayNgoaiPhai
+		}
+	]
+}
+DEF	dayBanTrong Transform {
+
+	children [
+		DEF SofaP Transform {
+			translation	3.6 -1.33 -5
+			scale .35 .35 .35
+			children [
+				Inline {
+					url	["BanGheSofa/main.wrl"]
+				}
+			]
+		}
+
+		Transform {
+			translation	3.6 -2 -8.5
+			scale .15 .15 .15
+			children [
+				Inline {
+					url	["Bantron/main1Ban4Ghe.wrl"]
+				}
+			]
+		}
+		DEF banghe3cho Transform {
+			translation	2.5 -2 -7
+			scale .15 .15 .15
+			children [
+				Inline {
+					url	["Bantron/main1Ban3Ghe.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	-7 0 -.5
+			children USE SofaP
+		}
+		Transform {
+			translation	-3.3 -2 -3.5
+			scale .15 .15 .15
+			children [
+				Inline {
+					url	["Bantron/main1Ban2Ghe.wrl"]
+				}
+			]
+		} 
+	]
+
+}

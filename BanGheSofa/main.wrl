@@ -1,0 +1,32 @@
+#VRML V2.0 utf8
+ Transform {
+	 translation 0 0 0
+	 children [
+		DEF	mainban Transform {
+			scale 0.8 0.8 0.8
+			children [
+				Inline {
+					url	["bantron_dac.wrl"]
+				}
+			]
+		}
+
+		DEF	mainghedai Transform {
+			translation	3 -1.2 0
+			children [	    
+				Inline {
+					url	["ghedai.wrl"]
+				}
+			]
+		}
+		DEF	mainghengan Transform {
+			translation	-3 -1.2 1.5
+			rotation 0 1 0 3.14
+			children [
+				Inline {
+					url	["gheban.wrl"]
+				}
+			]
+		}
+	 ]
+ }

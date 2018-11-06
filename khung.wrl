@@ -1337,10 +1337,6 @@ DEF	khung Transform	{
 				}
 			]
 		}
-		DEF	chuIPH2 Transform {
-			translation	10 0 0
-			children USE chuIPH
-		}
 		DEF	nenNgoai Transform {
 			translation	0 0 0
 			children [

@@ -1,0 +1,96 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	-0.45 -0.25 0
+	rotation 0 1 0 1.57
+	children [
+		Shape {
+			geometry Box {
+				size 5 0.5 1.5
+			}
+			appearance Appearance {
+				
+
+				texture	ImageTexture {
+					url	["mau2.jpg"]
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	0 0 0
+	scale 0.5 0.5 0.5
+	children [
+		Shape {
+
+			geometry Extrusion {
+				crossSection [1 1, 1 -1, -1 -1, -1 1, 1 1]
+				spine [0 0 0, 0 1 0, 0.2 2 0,0.4 2.8 0 ,0.6 3 0]
+				scale [0.6 5, 0.6 5, 0.4 5,0.2 5, 0 5]
+				solid FALSE
+				creaseAngle	1
+				
+
+			}
+			appearance Appearance {
+				
+				
+				texture	ImageTexture {
+					url	["mau2.jpg"]
+				}
+			}
+
+		}
+	]
+}
+
+DEF chan3 Transform {
+	translation	0.1 -0.6 -2.3
+	children
+	[
+		DEF chan Transform {
+			translation	0 0 0
+			children [
+		Shape {
+			geometry Cylinder {
+				height 0.2
+				radius 0.2
+				bottom TRUE
+				side TRUE
+				top	TRUE
+			}
+			appearance Appearance {
+				
+				texture	ImageTexture {
+					url	["mau3.jpg"]
+				}
+			}
+			
+		}
+	]
+	}
+	]
+}
+
+
+DEF chan2 Transform {
+	translation	0.1 -0.6 2.3
+	children [
+		USE	chan
+	]
+}
+
+Transform {
+	translation	-1.1 0 0
+	children [
+		USE	chan2
+	]
+}
+
+Transform {
+	translation	-1.1 0 0
+	children [
+		USE	chan3
+	]
+}
