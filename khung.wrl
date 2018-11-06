@@ -272,7 +272,7 @@ DEF	khung Transform	{
 		DEF	cuaMoT Transform {
 			children [
 				DEF	cuaTrai Transform {
-					translation	0.30 0.7 1
+					translation	0.3 0.7 1
 					children [
 						DEF	obcua1 Transform {
 							translation	0.35 0 0
@@ -324,7 +324,7 @@ DEF	khung Transform	{
 					]
 				}
 				DEF	cylin1 CylinderSensor {
-									minAngle 0
+									minAngle -1.57
 									maxAngle 1.57
 									enabled	TRUE
 								}
@@ -335,7 +335,7 @@ DEF	khung Transform	{
 		DEF	cuaMoP Transform {
 			children [
 				DEF	cuaPhai Transform {
-					translation	1.35 0.7 1
+					translation	1.7 0.7 1
 					children [
 						DEF	obcua2 Transform {
 							translation	-0.35 0 0
@@ -356,7 +356,7 @@ DEF	khung Transform	{
 					]
 				}
 				DEF	cylin2 CylinderSensor {
-									minAngle 0
+									minAngle -1.57
 									maxAngle 1.57
 									enabled	TRUE
 								}
@@ -1382,6 +1382,24 @@ DEF	khung Transform	{
 							}
 						}  
 					]
+				}
+			]
+		}
+		DEF	khungLOGO Transform	{
+			translation	0.9 1.3 2.5
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							url	["Images/logo.png"]
+						}
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Box {
+						size 2 0.2 0.05
+					}
 				}
 			]
 		}

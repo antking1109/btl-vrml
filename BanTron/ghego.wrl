@@ -1,0 +1,175 @@
+#VRML V2.0 utf8
+
+DEF GheGoBanTron Transform	{
+	children [
+		DEF	chanT1BanTron Transform {
+			translation	0 0 0
+			rotation 0 0 1 0
+			children [
+				DEF ve111 Shape {
+					geometry Box {
+						size .3 2 0.2
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .843 .365 .0118
+							specularColor 0 0 .00784
+							ambientIntensity .863
+							shininess 0
+						}
+					}
+				}
+			]
+		}
+		DEF	chanT2BanTron Transform {
+			translation 3 0 0
+			rotation 0 0 1 0
+			children [USE ve111]
+		}
+		DEF	chanS1BanTron Transform {
+			translation 3 0 3
+			rotation 0 0 1 0
+			children [USE ve111]
+		}
+		DEF	chanS2BanTron Transform {
+			translation 0 0 3
+			rotation 0 0 1 0
+			children [USE ve111]
+		}
+
+		#ngang
+		DEF	ngang1BanTron Transform {
+			translation	1.5 0.8 0.1
+			rotation 0 0 1 0
+			children [
+				DEF	veNgangBanTron Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .843 .365 .0118
+							specularColor 0 0 .00784
+							ambientIntensity .863
+							shininess 0
+						}
+					}
+					geometry Box {
+						size  3 0.4 0.2
+					}
+				}
+			]
+		}
+		DEF	ngang2BanTron Transform {
+			translation	1.5 0.8 2.9
+			rotation 0 0 1 0
+			children [USE veNgangBanTron]
+		}
+		DEF	ngang3BanTron Transform {
+			translation	0.1 0.8 1.5
+			rotation 0 1 0 1.5708
+			children [USE veNgangBanTron ]
+		}
+		DEF	ngang4BanTron Transform {
+			translation	2.9 0.8 1.5
+			rotation 0 1 0 1.5708
+			children [USE veNgangBanTron ]
+		}
+
+		#Thanh
+		DEF	thanh1BanTron Transform {
+			translation	0.5 0.85 1.5
+			rotation 0 0 1 0
+			children [
+				DEF	veThanhBanTron Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .843 .365 .0118
+							specularColor 0 0 .00784
+							ambientIntensity .863
+							shininess 0
+						}
+					}
+					geometry Box {
+						size 0.4 0.15 3
+					}
+				}
+			]
+		}
+		DEF	thanh2BanTron Transform {
+			translation	1 0.85 1.5
+			rotation 0 0 1 0
+			children [USE veThanhBanTron]
+		}
+		DEF	thanh3BanTron Transform {
+			translation	1.5 0.85 1.5
+			rotation 0 0 1 0
+			children [USE veThanhBanTron]
+		}
+		DEF	thanh4BanTron Transform {
+			translation	2 0.85 1.5
+			rotation 0 0 1 0
+			children [USE veThanhBanTron]
+		}
+		DEF	thanh5BanTron Transform {
+			translation	2.5 0.85 1.5
+			rotation 0 0 1 0
+			children [USE veThanhBanTron]
+		}
+		
+		DEF	tuaBanTron Transform {
+			translation	3.1 2.8 0.1	
+			rotation 0 0 1 -0.1
+			children [
+				DEF ben1BanTron Transform {
+					children [
+						DEF veBenBanTron Shape	{
+							appearance Appearance {
+								material Material {
+									diffuseColor .843 .365 .0118
+									specularColor 0 0 .00784
+									ambientIntensity .863
+									shininess 0
+								}
+							} 
+							geometry Box {
+								size 0.4 4 0.2
+							}
+						}
+					]
+				}
+				DEF	ben2BanTron Transform {
+					translation	0 0 2.8
+					children [USE veBenBanTron ]
+				}
+				DEF	thanhN1BanTron Transform {
+					translation	0 1.75 1.4
+					children [
+						DEF	veTNBanTron Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .843 .365 .0118
+									specularColor 0 0 .00784
+									ambientIntensity .863
+									shininess 0
+								}
+							} 
+							geometry Box {
+								size 0.2 0.5 2.8
+							}
+						}
+					]
+				}
+				DEF	thanhN2BanTron	Transform {
+					translation	0 1.15 1.4
+					children [USE veTNBanTron ]
+				}
+				DEF	thanhN3BanTron	Transform {
+					translation	0 0.55 1.4
+					children [USE veTNBanTron ]
+				}
+				DEF	thanhN4BanTron	Transform {
+					translation	0 -0.05 1.4
+					children [USE veTNBanTron ]
+				}
+			]
+		}
+	]
+}

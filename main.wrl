@@ -1,0 +1,40 @@
+#VRML V2.0 utf8
+
+DEF	khungNha Transform {
+	translation	-2 -2 -5
+	rotation 0 0 1 0
+	scale 2 2 2
+	children [
+		Inline {
+			url	["khung.wrl"]
+		}
+	]
+}
+DEF quayBanHang Transform {
+	translation	-3 -2 -7
+	rotation 0 1 0 3.14
+	scale 0.3 0.3 0.2
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.8 0.8 0.8
+				}
+			}
+			geometry Extrusion {
+				creaseAngle	1
+				solid FALSE
+				crossSection [-13 4,-12 3,-10 2,3 2,5 3, 6 4,6 -1,5 -2,3 -2,-10 -2,-12 -1,-13 4]
+				spine [0 0 0, 0 3 0]
+				scale [1 1]
+			}
+		}
+	]
+}
+DEF	giaDeDo Transform {
+	translation	-1.5 -0.5 -9.5
+	scale .5 .5 .5
+	children [Inline {
+		url	["giado.wrl"]
+	}]
+}

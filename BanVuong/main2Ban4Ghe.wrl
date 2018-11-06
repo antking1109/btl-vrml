@@ -1,0 +1,33 @@
+#VRML V2.0 utf8
+
+DEF	bo1BanDon4GheGo Transform {
+	children [
+		Inline {
+			url	["ban.wrl"]
+		}
+		DEF	ghePbo1BanDon4GheGo Transform {
+			translation	2.5 1 -1.5
+			rotation 0 0 1 0
+			children [
+				Inline {
+					url	["ghego.wrl"]
+				}
+			]
+		}
+		DEF	gheTbo1BanDon4GheGo Transform {
+			translation	-2.5 1 1.5
+			rotation 0 1 0 3.14
+			children [
+				Inline {
+					url	["ghego.wrl"]
+				}
+			]
+		}
+	]
+}
+DEF	bo1BanDon4GheGo2 Transform {
+	translation	0 0 -5
+	children [
+		USE	bo1BanDon4GheGo
+	]
+}
