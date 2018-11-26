@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+
+DEF	duChe Transform	{
+	children [
+		DEF	 dayDuChe Transform	{
+			translation	0 -7 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+					geometry Box {
+						size 3 0.5 3
+					}
+				}
+			]
+		}
+		DEF tanTren Transform {
+			children [
+				Shape {
+					
+					geometry Extrusion {
+						creaseAngle	 0
+						crossSection [-1 2, 1 2,2 1,2 -1, 1 -2,-1 -2,-2 -1,-2 1,-1 2]
+						spine [0 4 0,  0 0.5 0,    0 0 0,   0 0.5 0,     0 4 0]
+						scale [0 0,    2.9 2.9,    3 3     2.8 2.8,     0 0]
+						solid FALSE		
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .54 .05 .25
+							specularColor .81 .77 .75
+							ambientIntensity .487
+							shininess .83
+						}
+						texture	ImageTexture {
+							url	["Images/vaidu.jpg"]
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	truDuChe Transform {
+			translation	0 -1.6 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+					geometry Cylinder {
+						radius 0.2
+						height 11
+					}
+				}
+			]
+		}
+	]
+}

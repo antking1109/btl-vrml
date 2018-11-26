@@ -1,0 +1,125 @@
+#VRML V2.0 utf8
+DEF	decaldung Transform	{
+	translation	0 0 0
+	children [
+		DEF	khung Transform	{
+			translation	0 0 0
+			children [
+				DEF	thanhdoc Transform {
+					translation	0 0 0
+					children [
+						Shape {
+							geometry Cylinder {
+								height 5
+								radius 0.06
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+						}
+					]
+				}
+				DEF	thanhdoc1 Transform	{
+					translation	2.5 0 0
+					children [
+						USE	thanhdoc
+					]
+				}
+				DEF	thanhngang1 Transform {
+					translation	1.25 2.5 0
+					rotation 0 0 1 1.57
+					children [
+						Shape {
+							geometry Cylinder {
+								height 2.6 
+								radius 0.06
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+						}
+					]
+				}
+				DEF	thanhngang2	Transform {
+					translation	0 -5 0
+					children [
+						USE	thanhngang1
+					]
+				}
+				DEF	thanhngang3	Transform {
+					translation	0 -1.8 0
+					children [
+						USE	thanhngang1
+					]
+				}
+				DEF	thanhngang4	Transform {
+					translation	0 -3.5 0
+					children [
+						USE	thanhngang1
+					]
+				}
+				DEF	thanhsau Transform
+				{
+					translation	 2.5 -1.8 -0.7
+					rotation 1 0 0 0.8
+					children [
+						Shape {
+							geometry Cylinder {
+								height 2 
+								radius 0.06
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+						}
+					]
+				}
+				DEF	thanhsau1 Transform
+				{
+					translation	-2.5 0 0
+					children [
+						USE	thanhsau
+					]
+				}
+				DEF	thanhngang6 Transform {
+					translation	0 -1.5 -1.4
+					children [
+						USE	thanhngang4
+					]
+				}
+			]
+		}
+		DEF	anh Transform {
+			translation	1.25 0 0.04
+			rotation 0 0 1 0
+			children [
+				Shape {
+					geometry Box {
+						size 2.6 4.95 0.04
+					}
+					appearance Appearance {
+						 texture ImageTexture {
+							 url ["decaldung.jpg"]
+						 }
+
+					}
+				}
+			]
+		}
+	]
+}

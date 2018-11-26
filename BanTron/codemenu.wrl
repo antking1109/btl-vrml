@@ -1,0 +1,50 @@
+#VRML V2.0 utf8
+
+DEF hinhmenu Transform {
+	translation	0 0 0
+	children [
+		DEF	menuban Transform {
+			translation	0 1.2 0
+
+			children [
+				Shape {
+					geometry Box {
+						size 1.4 2 0.05
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	["menuhinh.jpg"]
+						}
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+
+		DEF	chanmenu Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Extrusion {
+						crossSection [1 1, 1 -1, -1 -1, -1 1, 1 1]	
+						spine [0 0 0, 0 0.2 0]
+						scale [1 0.1, 0.7 0.1 ]
+						creaseAngle	1
+						solid FALSE
+
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .151 .109	0
+						}
+					}
+				}
+			]
+		}
+	]
+} 

@@ -1,0 +1,551 @@
+#VRML V2.0 utf8
+
+DEF	ngankeotien Transform {
+	translation	0 0 0
+	children [
+		DEF	tutien Transform {
+	translation	0 0 0
+	children [
+		DEF	matben1 Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 2.5 0.5 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	 matben2 Transform {
+			translation	0 0 -2.5
+			children [
+				USE	matben1
+			]
+		}
+		DEF	matsau Transform {
+			translation	-1.25 0 -1.25
+			rotation 0 1 0 1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.6 0.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	mattren Transform {
+			translation	0 0.25 -1.25
+			rotation 1 0 0 -1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.55 2.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	matduoi Transform {
+			translation	0 -0.5 0
+			
+			children [
+				USE	mattren
+			]
+		}
+		DEF	ngantrong Transform {
+			translation	0 0 0
+			children [
+				DEF	mattrong1 Transform	{
+					translation	0 0 -0.1
+					children [
+						Shape {
+							geometry Box {
+								size 2.4 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .25 .24
+									specularColor .18 .25 .23
+									ambientIntensity .0433
+									shininess .06
+								}
+							}
+						}
+					]
+				}
+			
+		
+				DEF	ngantrong2 Transform {
+					translation	0 0 -2.2
+					children [
+						USE	mattrong1
+					]
+				}
+
+				DEF	mattruoctrong Transform	{
+					translation	1.2 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Box {
+								size  2.5 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .25 .31 .2
+									specularColor .21 .11 .11
+									ambientIntensity .0633
+									shininess .09
+								}
+							}
+						}
+					]
+				}
+
+				DEF	dayduoitrong Transform {
+					translation	0 -0.2 -1.25
+					rotation 1 0 0 -1.57
+					children [
+						  Shape	{
+							  geometry Box {
+								  size 2.4 2.3 0.1
+							  }
+							  appearance Appearance {
+								  material Material {
+									  diffuseColor 0 .25 .24
+									  specularColor .18 .25 .23
+									  ambientIntensity .0433
+									  shininess .06
+								  }
+							  }
+						  }
+					]
+				}
+				DEF	taycam Transform {
+					translation	1.3 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Sphere	{
+								radius 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .79 .25 0
+									specularColor .63 .19 .03
+									ambientIntensity .0867
+									shininess .55
+								}
+							}
+						}
+					]
+				}
+
+				DEF	psngankeo PlaneSensor {
+					autoOffset TRUE
+					enabled	TRUE
+					maxPosition	2.2 0
+					minPosition	0 0
+					offset 0 0 0
+				}
+		
+			]
+		}
+	   
+
+	]
+}
+	]
+
+}
+
+DEF	ngankeotien2 Transform {
+	translation	0 0.5 0
+	children [
+		  DEF	tutien2 Transform {
+	translation	0 0 0
+	children [
+		DEF	matben12 Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 2.5 0.5 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	 matben22 Transform {
+			translation	0 0 -2.5
+			children [
+				USE	matben12
+			]
+		}
+		DEF	matsau2 Transform {
+			translation	-1.25 0 -1.25
+			rotation 0 1 0 1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.6 0.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	mattren2 Transform {
+			translation	0 0.25 -1.25
+			rotation 1 0 0 -1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.55 2.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	matduoi2 Transform {
+			translation	0 -0.5 0
+			
+			children [
+				USE	mattren2
+			]
+		}
+		DEF	ngantrongb Transform {
+			translation	0 0 0
+			children [
+				DEF	mattrong12 Transform	{
+					translation	0 0 -0.1
+					children [
+						Shape {
+							geometry Box {
+								size 2.4 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .25 .24
+									specularColor .18 .25 .23
+									ambientIntensity .0433
+									shininess .06
+								}
+							}
+						}
+					]
+				}
+			
+		
+				DEF	ngantrong22 Transform {
+					translation	0 0 -2.2
+					children [
+						USE	mattrong1
+					]
+				}
+
+				DEF	mattruoctrong2 Transform	{
+					translation	1.2 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Box {
+								size  2.5 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .25 .31 .2
+									specularColor .21 .11 .11
+									ambientIntensity .0633
+									shininess .09
+								}
+							}
+						}
+					]
+				}
+
+				DEF	dayduoitrong2 Transform {
+					translation	0 -0.2 -1.25
+					rotation 1 0 0 -1.57
+					children [
+						  Shape	{
+							  geometry Box {
+								  size 2.4 2.3 0.1
+							  }
+							  appearance Appearance {
+								  material Material {
+									  diffuseColor 0 .25 .24
+									  specularColor .18 .25 .23
+									  ambientIntensity .0433
+									  shininess .06
+								  }
+							  }
+						  }
+					]
+				}
+				DEF	taycam2 Transform {
+					translation	1.3 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Sphere	{
+								radius 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .79 .25 0
+									specularColor .63 .19 .03
+									ambientIntensity .0867
+									shininess .55
+								}
+							}
+						}
+					]
+				}
+
+				DEF	psngankeo2 PlaneSensor {
+					autoOffset TRUE
+					enabled	TRUE
+					maxPosition	2.2 0
+					minPosition	0 0
+					offset 0 0 0
+				}
+		
+			]
+		}
+	   
+
+	]
+}
+	]
+}
+
+DEF	ngankeotien3 Transform {
+	translation	0 1 0
+	children [
+		DEF	tutien3 Transform {
+	translation	0 0 0
+	children [
+		DEF	matben13 Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 2.5 0.5 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	 matben23 Transform {
+			translation	0 0 -2.5
+			children [
+				USE	matben13
+			]
+		}
+		DEF	matsau3 Transform {
+			translation	-1.25 0 -1.25
+			rotation 0 1 0 1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.6 0.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+				}
+			]
+		}
+		DEF	mattren3 Transform {
+			translation	0 0.25 -1.25
+			rotation 1 0 0 -1.57
+			children [
+				Shape {
+					geometry Box {
+						size 2.55 2.6 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .25 .31 .2
+							specularColor .21 .11 .11
+							ambientIntensity .0633
+							shininess .09
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	matduoi3 Transform {
+			translation	0 -0.5 0
+			
+			children [
+				USE	mattren3
+			]
+		}
+		DEF	ngantrongc Transform {
+			translation	0 0 0
+			children [
+				DEF	mattrong13 Transform	{
+					translation	0 0 -0.1
+					children [
+						Shape {
+							geometry Box {
+								size 2.4 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .25 .24
+									specularColor .18 .25 .23
+									ambientIntensity .0433
+									shininess .06
+								}
+							}
+						}
+					]
+				}
+			
+		
+				DEF	ngantrong23 Transform {
+					translation	0 0 -2.2
+					children [
+						USE	mattrong1
+					]
+				}
+
+				DEF	mattruoctrong3 Transform	{
+					translation	1.2 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Box {
+								size  2.5 0.35 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .25 .31 .2
+									specularColor .21 .11 .11
+									ambientIntensity .0633
+									shininess .09
+								}
+							}
+						}
+					]
+				}
+
+				DEF	dayduoitrong3 Transform {
+					translation	0 -0.2 -1.25
+					rotation 1 0 0 -1.57
+					children [
+						  Shape	{
+							  geometry Box {
+								  size 2.4 2.3 0.1
+							  }
+							  appearance Appearance {
+								  material Material {
+									  diffuseColor 0 .25 .24
+									  specularColor .18 .25 .23
+									  ambientIntensity .0433
+									  shininess .06
+								  }
+							  }
+						  }
+					]
+				}
+				DEF	taycam3 Transform {
+					translation	1.3 0 -1.2
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Sphere	{
+								radius 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .79 .25 0
+									specularColor .63 .19 .03
+									ambientIntensity .0867
+									shininess .55
+								}
+							}
+						}
+					]
+				}
+
+				DEF	psngankeo3 PlaneSensor {
+					autoOffset TRUE
+					enabled	TRUE
+					maxPosition	2.2 0
+					minPosition	0 0
+					offset 0 0 0
+				}
+		
+			]
+		}
+	   
+
+	]
+}
+	]
+}
+ROUTE psngankeo.translation_changed TO ngantrong.translation
+ROUTE psngankeo2.translation_changed TO ngantrongb.translation
+ROUTE psngankeo3.translation_changed TO ngantrongc.translation

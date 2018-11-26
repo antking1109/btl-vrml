@@ -31,6 +31,52 @@ DEF quayBanHang Transform {
 		}
 	]
 }
+DEF	quangCaoQuayHang1 Transform	{
+	translation	-3 -1.55 -6.6
+	rotation 0 0 1 0
+	scale .2 .2 .2
+	children [
+		Shape {
+			geometry Box {
+				size 8 4 0.01
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture {
+					url	["Images/14-19.jpg"]
+				}
+			}
+		}
+	]
+}
+DEF	quangCaoQuayHang2 Transform	{
+	translation	-1 -1.55 -6.59
+	rotation 0 0 1 0
+	scale .2 .2 .2
+	children [
+		Shape {
+			geometry Box {
+				size 8 4 0.01
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture {
+					url	["Images/khuyenmai.png"]
+				}
+			}
+		}
+	]
+}
+DEF	mayTinh Transform {
+	translation	0 -1.1 -7
+	scale 0.2 0.2 0.2
+	rotation 0 1 0 3.14
+	children [
+		Inline {
+			url	["maytinh/maytinh.wrl"]
+		}
+	]
+}
 DEF	giaDeDo Transform {
 	translation	-1.5 -0.5 -9.5
 	scale .5 .5 .5
@@ -138,4 +184,162 @@ DEF	dayBanTrong Transform {
 		} 
 	]
 
+}
+DEF	tatCaHoa Transform {
+	
+	children [
+		DEF	hoangoai1 Transform	{
+			translation	2.5 -2 0.5
+			scale 0.2 0.2 0.2
+			children [Inline {
+				url	["xuongrong.wrl"]
+			}]
+		}
+		DEF	hoangoai2 Transform	{
+			translation	0.5 0 0
+			children [USE hoangoai1 ]
+		}
+		DEF	hoangoai3 Transform	{
+			translation	2 0 0
+			children [USE hoangoai2 ]
+		}
+		DEF	hoangoai4 Transform	{
+			translation	0.5 0 0
+			children [USE hoangoai3 ]
+		}
+		DEF	hoangoai5 Transform	{
+			translation	-5 0 0
+			children [USE hoangoai1 ]
+		}
+		DEF	hoangoai6 Transform	{
+			translation	-0.5 0 0
+			children [USE hoangoai5 ]
+		}
+		DEF	hoangoai7 Transform	{
+			translation	-2 0 0
+			children [USE hoangoai6 ]
+		}
+		DEF	hoangoai8 Transform	{
+			translation -0.5 0 0
+			children [USE hoangoai7 ]
+		}
+		DEF	hoangoai9 Transform	{
+			translation	1 0 -3.7
+			children [USE hoangoai1 ]
+		}
+		DEF	hoangoai10 Transform {
+			translation	-0.5 0 0
+			children [USE hoangoai9 ]
+		}
+	]
+}
+DEF	xapGiuaPhong Transform {
+	translation	1 -1.65 -5
+	rotation 0 1 0 -0.5
+	scale 0.35 0.35 0.35
+	children [Inline {
+		url	["xapgiua.wrl"]
+	}]
+}
+DEF	tatCaDuChe Transform	{
+	children [
+		DEF CacDu1 Transform {
+			translation	4 -.55 0
+			rotation 0 0 1 0
+			scale .2 .2 .2
+			children [Inline {
+				url	["duChe.wrl"]
+			}]
+		}
+		DEF	CacDu2 Transform {
+			translation	-8 0 0
+			children [USE CacDu1 ]
+		}
+
+	]
+}
+DEF	nganKeoTien Transform {
+	translation	-.5 -1.05 -7
+	scale .2 .2 .2
+	rotation 0 1 0 1.57
+	children [Inline {
+		url	["ngankeotien.wrl"]
+	}]
+}
+DEF	nhanDanKinh Transform {
+	children [
+		DEF nhan1 Transform {
+			translation	4 0 -2.98
+			scale 0.3 0.3 0.3
+			children [Inline {
+				url	["decal/nhandan.wrl"]
+			}]
+		}
+		DEF	nhan2 Transform	{
+			translation	-4 0 -2.98
+			scale 0.3 0.3 0.3
+			children [Inline {
+				url	["decal/nhandan.wrl"]
+			}]
+		}
+	]
+}
+DEF	decalCuaChinh Transform	{
+	translation	-3 -1.5 -2.5
+	scale 0.2 0.2 0.2
+	children [
+		Inline {
+			url	["decal/decaldung.wrl"]
+		}
+	]
+}
+DEF	nguoiDiChuyen Transform	{
+	translation	0 -0.7 0
+	scale 0.5 0.5 0.5
+	children [Inline {
+		url	["nguoi.wrl"]
+	}]
+}
+DEF	nhanVienLauBanNgoai Transform {
+	translation 2.2 -0.7 -1.5	
+	scale .5 .5 .5
+	children [Inline {
+		url	["nguoi2.wrl"]
+	}]
+}
+DEF	nhanVienLauBanTrong Transform {
+	translation -3 -0.7 -4.8
+	rotation 0 1 0 3.14
+	scale .5 .5 .5
+	children [Inline {
+		url	["nguoi2.wrl"]
+	}]
+}
+DEF	tatCaAnhTreoTuong Transform	{
+	children [
+		DEF	anhTreoTuong1 Transform	{
+			translation	4.8 0.5 -6.5
+			rotation 0 1 0 -1.57
+			scale .2 .2 .2
+			children [Inline {
+				url	["anhtreotuong/khunganh1.wrl"]
+			}]
+		}
+		DEF	anhTreoTuong2 Transform	{
+			translation	4.8 -0.2 -6.5
+			rotation 0 1 0 -1.57
+			scale .2 .2 .2
+			children [Inline {
+				url	["anhtreotuong/khunganhvuong.wrl"]
+			}]
+		}
+		DEF anhTreoTuong3 Transform	{
+			translation	-4.8 -0.2 -6.5
+			rotation 0 1 0 -1.57
+			scale .3 .3 .3
+			children [Inline {
+				url	["anhtreotuong/khunganhto.wrl"]
+			}]
+		}
+	]
 }

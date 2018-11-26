@@ -1,0 +1,117 @@
+#VRML V2.0 utf8
+
+DEF	maytinh Transform {
+	children [
+		DEF	dayMayTinh Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Extrusion {
+						creaseAngle	1
+						crossSection [
+							1	0			,
+							0.98	0.20	 ,
+							0.92	0.38	  ,
+							0.83	0.56	   ,
+							0.71	0.71		,
+							0.56	0.83		 ,
+							0.38	0.92		  ,
+							0.20	0.98		   ,
+							0.00	1.00			,
+							-0.20	0.98			 ,
+							-0.38	0.92			  ,
+							-0.56	0.83			   ,
+							-0.71	0.71				,
+							-0.83	0.56				 ,
+							-0.92	0.38				  ,
+							-0.98	0.20				   ,
+							-1.00	0.00					,
+							-0.98	-0.20					 ,
+							-0.92	-0.38					  ,
+							-0.83	-0.56					   ,
+							-0.71	-0.71						  ,
+							-0.56	-0.83						,
+							-0.38	-0.92						 ,
+							-0.20	-0.98						   ,
+							0.00	-1.00							,
+							0.20	-0.98							 ,
+							0.38	-0.92							  ,
+							0.56	-0.83							   ,
+							0.71	-0.71								,
+							0.83	-0.56								 ,
+							0.92	-0.38								  ,
+							0.98	-0.20								   ,
+							1.00	0.00
+						]
+						spine [0 0 0, 0 0.2 0]
+						scale 1 0.7
+						solid FALSE
+					}
+				}
+			]
+		}
+		DEF	chan Transform {
+			translation	0 0.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Box {
+						size 0.6 0.5 0.3
+					}
+				}
+			]
+		}
+		DEF	man Transform {
+			translation	0 1.7 0.25
+			rotation 1 0 0 -1.57
+			children [
+				Shape {
+					appearance  Appearance {
+						material Material {
+							diffuseColor .236	.236	.236
+						}
+					}
+					geometry Extrusion {
+						solid FALSE
+						creaseAngle	1
+						crossSection [2 1, 2 -1, -2 -1, -2 1, 2 1]
+						spine [0 0 0, 0 0.5 0]
+						scale [0.8 1.2, 0.6 1]
+					}
+				}
+				Transform {
+					translation	0 -0.01 0
+					children [
+						Shape {
+							appearance  Appearance {
+								material Material {
+									diffuseColor .236	.236	.236
+								}
+								texture	ImageTexture {
+									url	["manhinh.jpg"]
+									repeatS	FALSE
+									repeatT	FALSE
+								}
+							}
+							geometry Extrusion {
+								solid FALSE
+								creaseAngle	1
+								crossSection [2 1, 2 -1, -2 -1, -2 1, 2 1]
+								spine [0 0 0, 0 0.1 0]
+								scale [0.7 1.1]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

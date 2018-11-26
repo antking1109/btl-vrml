@@ -41,5 +41,11 @@ DEF	bo1BanDon4GheGo Transform {
 				}
 			]
 		}
+		DEF	menuBan1219837 Transform {
+			translation	0 4.5 0
+			children [Inline {
+				url	["codemenu.wrl"]
+			}]
+		}
 	]
 }

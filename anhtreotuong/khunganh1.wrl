@@ -1,0 +1,130 @@
+#VRML V2.0 utf8
+
+DEF	khunganh Transform {
+	translation	0 0 0
+	children [
+		DEF	khungduoi Transform	{
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 2 2.6 0.06
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	["anhtreo1.jpg"]
+						}
+						
+
+					}
+				}
+			]
+		}
+		DEF	bocngoai Transform {
+			translation	0 0 0
+			children [
+				DEF	thanhdung Transform	{
+					translation	-0.95 0 0.1
+						children [
+						Shape {
+							geometry Cylinder {
+								height 2.6
+								radius 0.05
+
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .33 .3 .28
+									specularColor .31 .25 .13
+									ambientIntensity .687
+									shininess .1
+								}
+							}
+							
+							
+						}
+					]
+				}
+
+				DEF	thanhdung2 Transform {
+					translation	1.9 0 0
+					children [
+						USE	thanhdung
+					]
+				}
+
+				DEF	thanhngang Transform {
+					translation	0 1.27 0.1
+					rotation 0 0 1 1.57
+					children [
+						Shape {
+							geometry Cylinder {
+								height 1.95 
+								radius 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .33 .3 .28
+									specularColor .31 .25 .13
+									ambientIntensity .687
+									shininess .1
+								}
+							}
+							
+
+						}
+					]
+				}
+				DEF	thanhngang2 Transform {
+					translation	0 -2.55 0
+					children [
+						USE	thanhngang
+					]
+				}
+
+				DEF	moctreo Transform {
+					translation	0 0 0
+					children [
+						DEF	doc Transform {
+							translation	0 1.4 0
+							children [
+								Shape {
+									geometry Cylinder {
+										height 0.3
+										radius 0.03
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor .25 .31 .2
+											specularColor .21 .11 .11
+											ambientIntensity .0633
+											shininess .09
+										}
+									}
+								}
+							]
+						}
+						DEF	tron Transform {
+							translation	0 1.61 0
+							children [
+								Shape {
+									geometry Sphere {
+										   radius 0.07
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor .28 .09 .13
+											specularColor .28 .11 .14
+											ambientIntensity .04
+											shininess .13
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,302 @@
+#VRML V2.0 utf8
+
+DEF nguoi1 Transform {
+	scale .5 .5 .5		  
+	children [
+		DEF	dauNguoi Transform {
+			translation	0 0 0
+			rotation 0 0 1 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Sphere	{
+						radius 0.5
+					}
+				}
+			]
+		}
+		DEF	coNguoi Transform {
+			translation	0 -0.35 0
+			children [
+				Shape {
+					 appearance	Appearance {
+						 material Material {
+							 diffuseColor 0.8 0.8 0.8
+						 }
+					 }
+					 geometry Cylinder {
+						 radius	0.2
+						 height	0.5
+					 }
+				}
+			]
+		}
+		DEF	thanNguoi Transform	{
+			translation	0 -3.6 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Extrusion {
+						crossSection [
+							-3 2,
+							-2 3 ,
+							 2 3  ,
+							 3 2   ,
+							 3 -2	,
+							 2 -3	 ,
+							-2 -3	  ,
+						    -3 -2	   ,
+						    -3  2 
+
+						]
+						spine [0 0 0,0 0.5 0, 0 2.5 0, 0 3 0]
+						scale [0.27 0.1,0.3 0.1,0.3 0.1,0.27 0.1]
+						creaseAngle	1
+						solid FALSE
+					}
+				}
+			]
+		}
+		DEF	tayTrai Transform {
+			translation	-0.9 -0.8 0
+			rotation 0 0 1 -0.1
+			children [
+				Transform {
+					translation	0 0 0
+					rotation 0 0 1 1.57
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Cylinder {
+								radius 0.2
+								height 0.5
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.2 -0.8 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Cylinder {
+								radius 0.2
+								height 2
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.2 -1.9 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Sphere	{
+								radius 0.2
+							}
+						}
+					]
+				}
+			]
+		}
+		DEF	chuyenDongTayPhai Transform	{
+			children [
+				DEF	tayPhai Transform {
+					translation	-0.2 -0.4 -0.8
+					rotation 1 0 0 -0.85
+					children [
+						DEF	veTayPhai Transform	{
+							rotation 0 1 0 3.14
+							children [
+								Transform {
+									translation	-0.9 -0.8 0
+									rotation 0 0 1 -0.1
+									children [
+										Transform {
+											translation	0 0 0
+											rotation 0 0 1 1.57
+											children [
+												Shape {
+													appearance Appearance {
+														material Material {
+															diffuseColor 0.8 0.8 0.8
+														}
+													}
+													geometry Cylinder {
+														radius 0.2
+														height 0.5
+													}
+												}
+											]
+										}
+										Transform {
+											translation	-0.2 -0.8 0
+											children [
+												Shape {
+													appearance Appearance {
+														material Material {
+															diffuseColor 0.8 0.8 0.8
+														}
+													}
+													geometry Cylinder {
+														radius 0.2
+														height 2
+													}
+												}
+											]
+										}
+										Transform {
+											translation	-0.2 -1.9 0
+											children [
+												Shape {
+													appearance Appearance {
+														material Material {
+															diffuseColor 0.8 0.8 0.8
+														}
+													}
+													geometry Sphere	{
+														radius 0.2
+													}
+												}
+											]
+										}
+										Transform {
+											translation	-0.2 -2.1 0
+											rotation 1 0 0 2.1
+											children [
+												Shape {
+													appearance Appearance {
+														material Material {
+															diffuseColor 0.8 0.8 0.8
+														}
+													}
+													geometry Box {
+														size 0.8 0.1 0.5
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		DEF	chanTrai Transform {		
+			children [
+				Transform {
+					translation	-0.5 -4.3 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Cylinder {
+								radius 0.2
+								height 1.5
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-0.5 -4.9 0.1
+					rotation 1 0 0 1.57
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.8 0.8 0.8
+								}
+							}
+							geometry Cylinder {
+								radius 0.2
+								height 0.5
+							}
+						}
+					]
+				}
+			]
+		}
+		DEF	chanPhai Transform {
+			children [
+				DEF	veChanPhai Transform {
+					translation	1 0 0
+					children [
+						Transform {
+							translation	-0.5 -4.3 0
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Cylinder {
+										radius 0.2
+										height 1.5
+									}
+								}
+							]
+						}
+						Transform {
+							translation	-0.5 -4.9 0.1
+							rotation 1 0 0 1.57
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor 0.8 0.8 0.8
+										}
+									}
+									geometry Cylinder {
+										radius 0.2
+										height 0.5
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+		DEF	or1 OrientationInterpolator {
+			key	[0 0.25 0.75 1]
+			keyValue [0 0 1 0,,0 1 0 -0.3,0 1 0 0.3,0 0 0 0]
+		}
+		DEF TS1 TimeSensor {
+
+    		enabled TRUE
+
+    		cycleInterval 1
+
+    		loop TRUE
+
+		}
+	]
+	ROUTE TS1.fraction_changed TO or1.set_fraction	 
+	ROUTE or1.value_changed	TO chuyenDongTayPhai.rotation		  
+}

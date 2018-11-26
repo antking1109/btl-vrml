@@ -1,0 +1,29 @@
+#VRML V2.0 utf8
+
+DEF	nhandan Transform {
+	translation	0 0 0
+	children [
+		DEF	nentron Transform
+		{
+			translation	0 0 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					geometry  Cylinder {
+						height 0.02
+						radius 1.5
+
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	["nhandan.jpg"]
+						}
+						
+
+					}
+
+				}
+			]
+		}
+	]
+}

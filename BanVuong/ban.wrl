@@ -91,5 +91,12 @@ DEF	BanVuongDon Transform {
 				}
 			}
 		}
+		DEF	menubanvuong Transform {
+			translation	0 4.5 0
+			rotation 0  1 0 1.57
+			children [Inline {
+				url	["codemenu.wrl"]
+			}]
+		}
 	]
 }

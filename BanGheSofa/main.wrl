@@ -28,5 +28,13 @@
 				}
 			]
 		}
+		DEF	menuBanTron2131 Transform {
+			translation	0 0.05 0
+			rotation 0 1 0 1.57
+			scale 0.5 0.5 0.5
+			children [Inline {
+				url	["codemenu.wrl"]
+			}]
+		}
 	 ]
  }
