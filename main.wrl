@@ -99,8 +99,6 @@ DEF	dayBongDen Transform {
 				}
 				DEF plDen PointLight {
 
-					on FALSE
-
 					intensity 0.5			
 
 					ambientIntensity 0
@@ -221,7 +219,22 @@ DEF	dayBanNgoai Transform {
 		DEF	dayNgoaiTrai Transform {
 			translation	0 0 -2
 			rotation 0 1 0 3.14
-			children USE dayNgoaiPhai
+		
+			children [
+				DEF	boBanGheNgoai123 Transform {
+					translation	2.5 -2 -1
+					scale 0.15 0.15 0.15
+					children [Inline {
+						url ["BanVuong/main1Ban2Ghe.wrl"] }]
+					}  
+				DEF	boBanGheNgoai245 Transform {
+					translation	5 -2 -0.6
+					scale 0.15 0.15 0.15
+					children [Inline {
+						url	["BanVuong/main2Ban4Ghe.wrl"] }]
+						
+				}]
+			
 		}
 	]
 }
@@ -400,6 +413,14 @@ DEF	nhanVienLauBanTrong Transform {
 	scale .5 .5 .5
 	children [Inline {
 		url	["nguoi2.wrl"]
+	}]
+}
+DEF	nhanVienThuNgan Transform {
+	translation 0.1 -0.5 -8
+	
+	scale .3 .3 .3
+	children [Inline {
+		url	["nguoi3tt.wrl"]
 	}]
 }
 DEF	tatCaAnhTreoTuong Transform	{
