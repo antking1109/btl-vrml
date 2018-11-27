@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
-DEF GheGoBanTron Transform	{
-	children [
+DEF GheGoBanTron1109 Transform	{
+	children [	 
 		DEF	chanT1BanTron Transform {
 			translation	0 0 0
 			rotation 0 0 1 0
@@ -169,7 +169,15 @@ DEF GheGoBanTron Transform	{
 					translation	0 -0.05 1.4
 					children [USE veTNBanTron ]
 				}
+				DEF	ps1120921023 PlaneSensor {
+					autoOffset TRUE
+					enabled	TRUE
+					maxPosition	2 0
+					minPosition	0 0
+					offset 0 0 0
+				}
 			]
+			ROUTE ps1120921023.translation_changed TO GheGoBanTron1109.translation
 		}
-	]
+	]	 
 }

@@ -89,9 +89,31 @@ DEF	dayBongDen Transform {
 		DEF	bongden1 Transform {
 			translation	-4 0.5 -5
 			scale 0.2 0.2 0.2
-			children [Inline {
-				url	["den.wrl"]
-			}]
+			children [
+				Transform {
+					children [
+						Inline {
+							url	["den.wrl"]	
+						}
+					]
+				}
+				DEF plDen PointLight {
+
+					on FALSE
+
+					intensity 0.5			
+
+					ambientIntensity 0
+
+					color 1 1 1
+
+					location 0 -0.5 0 
+
+					attenuation -1 0 0
+
+					radius 30
+				}
+			]
 		}
 		DEF	bongden2 Transform {
 			translation	2 0 0
@@ -111,6 +133,71 @@ DEF	dayBongDen Transform {
 		}
 	]
 }
+DEF  batTatDen Transform {
+translation	0 -1.2 -6.6
+	children [
+		Shape {
+			geometry Box {size 0.1 0.1 0.02}
+			appearance Appearance {
+				material Material {
+			diffuseColor .51 .17 .06 
+			specularColor .53 .53 .53
+			ambientIntensity .06
+			shininess .93
+		} }
+		}
+		DEF nut Transform {
+			translation	0 0 0.02
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					geometry Cylinder {height 0.02 radius 0.04}
+					appearance Appearance {
+						material Material {
+							diffuseColor .996 .0549 0
+						}
+					}
+					
+				}						 
+				DEF t1 TouchSensor	{
+					enabled	TRUE
+				}													
+				DEF	time1 TimeSensor {
+					enabled	FALSE
+					loop TRUE
+							}
+						]
+					}
+				]
+			}
+	DEF ma Script {
+	eventIn	SFBool turnOn
+	eventOut SFBool	on
+	eventOut SFBool	off
+	field SFBool turn FALSE	
+	url	"javascript:
+	function turnOn(val){
+		if(val){
+			turn = !turn;
+			if(turn)
+			{	
+		  on = true; off = false; 	  
+				 
+			}
+  			else
+       		{  
+			on = false; off = true;	 
+			}
+    	}
+	}
+	"
+}
+
+ROUTE t1.isActive TO ma.turnOn
+ROUTE ma.on	TO time1.enabled 
+ROUTE time1.isActive TO	plDen.on
+
+
 DEF	dayBanNgoai Transform {
 	children [
 		DEF	dayNgoaiPhai Transform {
@@ -339,6 +426,26 @@ DEF	tatCaAnhTreoTuong Transform	{
 			scale .3 .3 .3
 			children [Inline {
 				url	["anhtreotuong/khunganhto.wrl"]
+			}]
+		}
+	]
+}
+DEF	tatCaCocVaKhay Transform {
+	children [
+		Transform {
+			translation -3 -1.1 -7
+			scale .1 .1 .1
+			children [
+				Inline {
+					url	["khaydo.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	-2.6 -1 -7
+			scale .05 .05 .05
+			children [Inline {
+				url	["coc4.wrl"]
 			}]
 		}
 	]

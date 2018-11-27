@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+
+DEF	cocok Transform {
+	translation	0 0 0
+	children [
+		DEF	coc1 Transform {
+			translation	0 -2 0
+			children [
+				Shape {
+					geometry Extrusion {
+						crossSection [
+							-3 2,
+							-2 3 ,
+							 2 3  ,
+							 3 2   ,
+							 3 -2	,
+							 2 -3	 ,
+							-2 -3	  ,
+						    -3 -2	   ,
+						    -3  2 
+
+						]
+						spine [0 0 0, 0 4 0, 0 0 0]
+						scale [0.25 0.25, 0.4 0.4, 0.23 0.23]
+						creaseAngle	1
+						solid TRUE
+					}
+					
+					appearance Appearance {
+            			material Material {
+            			  diffuseColor 0.6 0.5882 0.6353
+            			  ambientIntensity 1.0
+            			  specularColor 0 0 0
+            			  shininess 0.145
+            			  transparency 0.5
+            			}
+        			}
+				}
+			]
+		}
+		DEF	coc2 Transform	{
+			translation	2.5 0 0
+			rotation 0 0 1 0
+			children [
+				USE	coc1
+			]
+		}
+		DEF	 coc3 Transform
+		{
+			translation	0 0 2.5
+			children [
+				USE	coc1
+			]
+		}
+		DEF	coc4 Transform
+		{
+			translation	0 0 2.5
+			children [
+				USE	coc2
+			]
+		}
+	]
+}

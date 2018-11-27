@@ -2,6 +2,15 @@
 
 DEF	giaDo Transform	{
 	children [
+		DEF	cocTang2 Transform {
+			translation	3.2 0.25 0
+			scale 0.15 0.15 0.15
+			children [
+				Inline {
+					url	["cocke.wrl"]
+				}
+			]
+		}
 		DEF thanhDoc_giaDo1 Transform {
 			children [
 				Shape {

@@ -24,14 +24,28 @@ Transform {
 			 translation 0 0 0
 			 rotation 0 1 0 -3.925
 			 children [
-				USE	dich97
+				Transform {
+					translation 2.5 1 -1
+					  children [
+							Inline {
+								url	["ghego.wrl"]
+							}
+					  ]
+				}
 			 ]
 		 }
 		 Transform {
 			 translation 0 0 0
 			 rotation 0 1 0 3.925
 			 children [
-				USE	dich97
+				Transform {
+					translation 2.5 1 -1
+					  children [
+							Inline {
+								url	["ghego.wrl"]
+							}
+					  ]
+				}
 			 ]
 		 }
 	]

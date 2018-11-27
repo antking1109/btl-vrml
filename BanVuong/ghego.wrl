@@ -1,6 +1,6 @@
 #VRML V2.0 utf8
-DEF GheGo Transform	{
-	children [
+DEF GheGo2113 Transform	{
+	children [	 
 		DEF	chanT1 Transform {
 			translation	0 0 0
 			rotation 0 0 1 0
@@ -200,7 +200,16 @@ DEF GheGo Transform	{
 					translation	0 -0.05 1.4
 					children [USE veTN ]
 				}
+				DEF	ps4589 PlaneSensor {
+					autoOffset TRUE
+					enabled	TRUE
+					maxPosition	2 0
+					minPosition	0 0
+					offset 0 0 0
+				}
 			]
+			ROUTE ps4589.translation_changed TO	GheGo2113.translation
 		}
-	]
+	]															  
+
 }
