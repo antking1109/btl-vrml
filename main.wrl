@@ -97,7 +97,7 @@ DEF	dayBongDen Transform {
 						}
 					]
 				}
-				DEF plDen PointLight {
+				DEF plDen PointLight {				 
 
 					intensity 0.5			
 
@@ -192,7 +192,7 @@ translation	0 -1.2 -6.6
 }
 
 ROUTE t1.isActive TO ma.turnOn
-ROUTE ma.on	TO time1.enabled 
+ROUTE ma.on	TO time1.enabled   
 ROUTE time1.isActive TO	plDen.on
 
 
