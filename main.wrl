@@ -394,31 +394,31 @@ DEF	decalCuaChinh Transform	{
 	]
 }
 DEF	nguoiDiChuyen Transform	{
-	translation	0 -0.7 0
-	scale 0.5 0.5 0.5
+	translation	0 -0.92 0
+	scale 0.2 0.2 0.2
 	children [Inline {
 		url	["nguoi.wrl"]
 	}]
 }
 DEF	nhanVienLauBanNgoai Transform {
-	translation 2.2 -0.7 -1.5	
-	scale .5 .5 .5
+	translation 2.5 -0.92 -1.5	
+	scale 0.2 0.2 0.2
 	children [Inline {
 		url	["nguoi2.wrl"]
 	}]
 }
 DEF	nhanVienLauBanTrong Transform {
-	translation -3 -0.7 -4.8
+	translation -3.2 -0.92 -4.8
 	rotation 0 1 0 3.14
-	scale .5 .5 .5
+	scale 0.2 0.2 0.2
 	children [Inline {
 		url	["nguoi2.wrl"]
 	}]
 }
 DEF	nhanVienThuNgan Transform {
-	translation 0.1 -0.5 -8
+	translation 0.1 -0.8 -8
 	
-	scale .3 .3 .3
+	scale .22 .22 .22
 	children [Inline {
 		url	["nguoi3tt.wrl"]
 	}]
